@@ -1,4 +1,27 @@
+# Demo app with multi tenancy, NextJS frontend and NestJS backend
+
+## Setup and running the app
+
+### Start nextjs
+
+This will start NextJS on `http://localhost:3000`
+
+```bash
+npm i
+npm run dev
+```
+
+This will start the NestJS backend on `http://localhost:3001`
+
+```bash
+cd nestjs-backend
+npm i
+npm run start:dev
+```
+
 ## cURL commands to create and configure tenants
+
+This project relies on certain tenants to be created in the SuperTokens core. Below are the curl commands to create and configure the tenants.
 
 ```bash
 curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/recipe/multitenancy/tenant' \
