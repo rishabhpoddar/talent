@@ -1,8 +1,9 @@
 ## cURL commands to create and configure tenants
 
 ```bash
-curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/tenant' \
+curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/recipe/multitenancy/tenant' \
 --header 'Content-Type: application/json' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv' \
 --data-raw '{
     "tenantId": "tenant1",
     "emailPasswordEnabled": true,
@@ -10,8 +11,9 @@ curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/t
     "passwordlessEnabled": false
 }'
 
-curl --location --request PUT 'https://try.supertokens.com/tenant1/recipe/multitenancy/config/thirdparty' \
+curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/tenant1/recipe/multitenancy/config/thirdparty' \
 --header 'Content-Type: application/json' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv' \
 --data-raw '{
   "config": {
     "thirdPartyId": "google-workspaces",
@@ -29,8 +31,9 @@ curl --location --request PUT 'https://try.supertokens.com/tenant1/recipe/multit
 }'
 
 
-curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/tenant' \
+curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/recipe/multitenancy/tenant' \
 --header 'Content-Type: application/json' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv' \
 --data-raw '{
     "tenantId": "tenant2",
     "emailPasswordEnabled": true,
@@ -38,8 +41,9 @@ curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/t
     "passwordlessEnabled": false
 }'
 
-curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/tenant' \
+curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/recipe/multitenancy/tenant' \
 --header 'Content-Type: application/json' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv' \
 --data-raw '{
     "tenantId": "tenant3",
     "emailPasswordEnabled": false,
@@ -48,8 +52,9 @@ curl --location --request PUT 'https://try.supertokens.com/recipe/multitenancy/t
 }'
 
 
-curl --location --request PUT 'https://try.supertokens.com/tenant3/recipe/multitenancy/config/thirdparty' \
+curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/tenant3/recipe/multitenancy/config/thirdparty' \
 --header 'Content-Type: application/json' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv' \
 --data-raw '{
   "config": {
     "thirdPartyId": "github",
