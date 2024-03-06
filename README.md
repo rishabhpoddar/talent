@@ -91,3 +91,14 @@ curl --location --request PUT 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122a
   }
 }'
 ```
+
+### Get information on MAUs and DAUs
+
+The SuperTokens core keeps track of the MAU count. To get the total number of MAUs since a certain date, you can use the following curl command:
+
+```bash
+curl --location --request GET 'https://st-dev-6c18c3b0-c96b-11ee-813b-df2fdf122adb.aws.supertokens.io/appid-talent/users/count/active?since=1709663400000' \
+--header 'api-key: 2o3EmNQGPQ3YaC6kbAcB33keTv'
+```
+
+The query param `since` (time in MS since epoch) specifies the time from which you want to get the MAU count. So if you want to get the current DAU, you will have to set `since` to the current time minus 24 hours. If you want to get the MAU count for the last 30 days, you will have to set `since` to the current time minus 30 days.
