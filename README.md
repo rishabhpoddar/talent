@@ -1,5 +1,21 @@
 # Demo app with multi tenancy, NextJS frontend and NestJS backend
 
+This demo app showcases:
+- Multi org setup where each org has its own user pool and login method:
+  - Tenant 1: Email password and Google Workspaces
+  - Tenant 2: Email password
+  - Tenant 3: GitHub and passwordless login
+- Automatic account linking during sign up
+- Password breached detection
+- A user management dashboard
+- Sessions with HttpOnly cookies
+- Session verification during SSR
+- NextJS frontend with our pre built UI
+- NestJS backend with SuperTokens middleware
+- Firing analytics events for new user sign up
+- Getting information on MAUs and DAUs
+
+
 ## Setup and running the app
 
 ### Start nextjs
