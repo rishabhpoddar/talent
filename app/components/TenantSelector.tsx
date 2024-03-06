@@ -10,7 +10,7 @@ export const TenantSelector = (props: { setHasSelectedTenantId: React.Dispatch<R
     const [selectedTenantId, setSelectedTenantId] = useState<string>("");
 
     const fetchTenants = async () => {
-        const response = await fetch(`/api/tenants`);
+        const response = await fetch(`http://localhost:3001/tenants`);
 
         if (response.status !== 200) {
             window.alert("Error fetching tenants");
